@@ -1,0 +1,34 @@
+body{
+    overflow: hidden;
+    margin: 100px 0 0 0;
+    background: #FBF8B6;
+}
+
+Javascriptionary{
+    position: absolute;
+    width: 734px;
+    height: 105px;
+    left: 389px;
+    top: 58px;
+    
+
+font-family: 'chalkduster';
+font-style: normal;
+font-weight: 400;
+font-size: 96px;
+line-height: 105px;
+
+color: #FF0707;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+label{
+ 
+    font-family: 'monospace';
+    font-style: normal;
+    font-size: 24px;
+    color:black
+}
+
+
+
