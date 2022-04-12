@@ -26,8 +26,8 @@ h1 {
     padding: 5px;
     width: 200px;
     background-color: #166d53;
-    background: -webkit-linear-gradient(to right, #16546d, #3c166d, #17166d);
-    background: linear-gradient(to right, #16546d, #166d53, #166d53);
+    background: -webkit-linear-gradient(to left, #16546d, #3c166d, #17166d);
+    background: linear-gradient(to left, #16546d, #166d53, #166d53);
 }
 
 #toolbar * {
