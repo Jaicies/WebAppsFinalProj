@@ -13,6 +13,28 @@ let lineWidth = 5;
 let startX;
 let startY;
 
+//database connect//
+var pg = require(pg);
+
+var connectionString = "postgres://postgres:password@javascriptionary/12.0.0.1:5432/jaiciecongress";
+
+var pgClient = new pg.Client(connectionString);
+
+pgClient.connect();
+
+// example query
+var query = pgClient.query("select * from words");
+
+// adding row found in query to a result 
+query.on("row", function(row,result){
+
+    result.addRow(row);
+    });
+
+
+console.log("done");
+
+
 toolbar.addEventListener('click', e => {
     if (e.target.id === 'clear') {
         ctx.clearRect(0, 0, canvas.width, canvas.height);

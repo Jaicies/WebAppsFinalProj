@@ -1,0 +1,5 @@
+publish_key = pub-c-fcbe66e8-5ea6-4e5f-aeb6-bdf29bf4b172
+
+sub_key = sub-c-5653f18e-c315-11ec-b74b-82b465a2b170
+
+secret_key = sec-c-ZGM2OGUyOWUtOGNkNy00YThhLTg4NGItOTk4YWIyZWQzMmE3
