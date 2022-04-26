@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="Mycanvas.css">
     <title>JavaScriptionary</title>
 </head>
+
+
+
 <body>
     <section class="container">
         <div id="toolbar">
@@ -23,13 +26,38 @@
             </select>
             <label for="yourWord">Your Word:</label>
 
+            <button onclick="myFunction()">Submit Drawing.</button>
+
+            <script>
+              function myFunction() {
+                alert("It Is The Next Players Turn.");
+              }
+              </script>
+
+
+           
+                    <textarea id="myText"></textarea>
+
+
+              <button onclick="myFunction()">Submit Guess.</button>
+
+              <script>
+                function myFunction() {
+                  alert("It Is The Next Players Turn.");
+                }
+                </script>
+
         </div>
+
+
         <div class="drawing-board">
             <canvas id="drawing-board"></canvas>
         </div>
         
     </section>
+
     <script src="./Mycanvas.js"></script>
+
 </body>
 </html>
 
