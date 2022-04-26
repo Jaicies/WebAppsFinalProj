@@ -14,25 +14,25 @@ let startX;
 let startY;
 
 //database connect//
-var pg = require(pg);
+//var pg = require(pg);
 
-var connectionString = "postgres://postgres:password@javascriptionary/12.0.0.1:5432/jaiciecongress";
+//var connectionString = "postgres://postgres:password@javascriptionary/12.0.0.1:5432/jaiciecongress";
 
-var pgClient = new pg.Client(connectionString);
+//var pgClient = new pg.Client(connectionString);
 
-pgClient.connect();
+//pgClient.connect();
 
 // example query
-var query = pgClient.query("select * from words");
+//var query = pgClient.query("select * from words");
 
 // adding row found in query to a result 
-query.on("row", function(row,result){
+//query.on("row", function(row,result){
 
-    result.addRow(row);
-    });
+    //result.addRow(row);
+   // });
 
 
-console.log("done");
+//console.log("done");
 
 
 toolbar.addEventListener('click', e => {
