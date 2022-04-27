@@ -80,4 +80,4 @@ canvas.addEventListener('mousemove', draw);
 
 
 
-document.getElementById('myText').value.toLowerCase().includes("textbox"); // this will return TRUE
+
