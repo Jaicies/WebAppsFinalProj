@@ -35,18 +35,14 @@
               </script>
 
 
-      <textarea id="myText"></textarea>
+          <form action="/action_page.php">
+            <label for="fname">Submit Guess:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="submit" value="Submit">
+          </form>
 
 
-              <button onclick="myGuess()">Submit Guess.</button> &nbsp;&nbsp;
-
-              <script>
-                function myGuess() {
-                  alert("It's Time To Draw.");
-                }
-                </script>
-                
-
+              
 
               <script>
                  function refreshPage(){
