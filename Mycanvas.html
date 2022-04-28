@@ -23,7 +23,7 @@
 
 
 
-
+      <button onclick="myDrawing()">Submit Drawing.</button> &nbsp;&nbsp;
 
 
       <script>
@@ -31,13 +31,9 @@
           alert("It's Time To Guess.");
         }
 
-        //getRandomWord(function(word) 
-        //{
-        //  response.write('<li>'+word+'<li>'); 
-        //});
-
-        //var message = word
-        setTimeout(function () { alert("Your word is kite"); }, 1000);
+        var wordArray = ['kite','dog','house','cat','apple'];
+        var item = wordArray[Math.floor(Math.random() * wordArray.length)];
+        setTimeout(function () { alert("Your word is " + item); }, 1000);
 
 
       </script>
