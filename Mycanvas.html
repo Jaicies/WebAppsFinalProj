@@ -45,19 +45,10 @@
 
 
 
-      <form onSubmit=myGuess()>
-        <label for="fname">Submit Guess:</label>
+      <form>
+        <label for="word">Guess:</label>
         <input type="text" id="userGuess" name="userGuess"><br><br>
-        <input type="submit" value="Submit">
       </form>
-
-      <script>
-        function myGuess() {
-          var userGuess = "<%session.getAttribute("userGuess");%>";
-          var word = kite;
-          return word.equals(userGuess);
-        }
-      </script>
 
 
       <!---->
