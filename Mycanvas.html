@@ -19,38 +19,38 @@
       <label for="lineWidth">Line Width</label>
       <input id="lineWidth" name='lineWidth' type="number" value="5">
       <button id="clear">Clear The Canvas</button> &nbsp;
-    
-      
 
 
 
-            <button onclick="myDrawing()">Submit Drawing.</button> &nbsp;&nbsp;
-
-            <script>
-              function myDrawing() {
-                alert("It's Time To Guess.");
-              }
-
-              setTimeout(function() {alert("Database Word"); }, 1000);
-              </script>
 
 
-          <form action="/action_page.php">
-            <label for="fname">Submit Guess:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <input type="submit" value="Submit">
-          </form>
+      <button onclick="myDrawing()">Submit Drawing.</button> &nbsp;&nbsp;
+
+      <script>
+        function myDrawing() {
+          alert("It's Time To Guess.");
+        }
+
+        setTimeout(function () { alert("Database Word"); }, 1000);
+      </script>
 
 
-              
+      <form onSubmit = "return myGuess{}">
+        <label for="fname">Submit Guess:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="submit" value="Submit">
+      </form>
 
-              <script>
-                 function refreshPage(){
-                  window.location.reload();
-              } 
-              </script>
-              
-              <button class="submit" onClick="refreshPage()">Click Here To Restart And Get A New Word.</button>
+
+
+
+      <script>
+        function refreshPage() {
+          window.location.reload();
+        } 
+      </script>
+
+      <button class="submit" onClick="refreshPage()">Click Here To Restart And Get A New Word.</button>
 
     </div>
 
