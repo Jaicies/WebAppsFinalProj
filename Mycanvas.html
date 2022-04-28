@@ -26,48 +26,23 @@
 
       <button onclick="myDrawing()">Submit Drawing.</button> &nbsp;&nbsp;
       
-      <script>
-            const { Client } = require("pg")
-
-            const client = new Client({
-                host:"localhost",
-                user:"postgres",
-                port:"5432",
-                password: "password",
-                database: "jaiciecongress"
-            })
-
-            function getRandomWord(callback) {
-                client.connect();
-                var message = ""
-                var result=""
-                client.query(`select word from words order by random() limit 1;`, function(err,res)
-                {
-                    
-                    console.log(res.rows);
-                    callback(res.rows[0].word);
-                    //result = getRandomWord(function(word) {response.write('<li>'+word+'<li>'); });
-                    done();
-                    
-                    client.end
-                });
-                return result
-            }
-
-            //getRandomWord(function(word) {response.write('<li>'+word+'<li>');});
-      </script>
 
       <script>
         function myDrawing() {
           alert("It's Time To Guess.");
         }
-        getRandomWord(function(word) {res.write('<li>'+word+'<li>'); });
 
-        var message = word
-        setTimeout(function () { alert("Your word is " + message); }, 1000);
+        //getRandomWord(function(word) 
+        //{
+          //  response.write('<li>'+word+'<li>'); 
+        //});
+
+        //var message = word
+        setTimeout(function () { alert("Your word is kite" ); }, 1000);
         
 
       </script>
+
 
 
       <form onSubmit = "return myGuess{}">
