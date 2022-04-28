@@ -54,8 +54,8 @@
       <script>
         function myGuess() {
           var userGuess = "<%session.getAttribute("userGuess");%>";
-          var pass = document.getElementById('pass').value;
-          return pass.equals(userGuess);
+          var word = kite;
+          return word.equals(userGuess);
         }
       </script>
 
