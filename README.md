@@ -2,5 +2,5 @@
 
 Khyre Hill
 Brian Newman
-Jaice Smallwood
+Jaice Smallwood smallwoodj19@students.ecu.edu
 
