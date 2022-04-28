@@ -18,18 +18,13 @@
       <input id="stroke" name='stroke' type="color">
       <label for="lineWidth">Line Width</label>
       <input id="lineWidth" name='lineWidth' type="number" value="5">
-      <button id="clear">Clear</button>
-      <label for="dropdown">Choose a difficulty level:</label>
-      <select name="difficulty" id="difficulty">
-        <option value="easy"> Easy</option>
-        <option value="medium">Hard</option>
-        <option value="impossible">Impossible</option>
-      </select>
+      <button id="clear">Clear The Canvas</button> &nbsp;
+    
       
 
 
 
-            <button onclick="myDrawing()">Submit Drawing.</button>
+            <button onclick="myDrawing()">Submit Drawing.</button> &nbsp;&nbsp;
 
             <script>
               function myDrawing() {
@@ -43,7 +38,7 @@
       <textarea id="myText"></textarea>
 
 
-              <button onclick="myGuess()">Submit Guess.</button>
+              <button onclick="myGuess()">Submit Guess.</button> &nbsp;&nbsp;
 
               <script>
                 function myGuess() {
@@ -51,6 +46,15 @@
                 }
                 </script>
                 
+
+
+              <script>
+                 function refreshPage(){
+                  window.location.reload();
+              } 
+              </script>
+              
+              <button class="submit" onClick="refreshPage()">Click Here To Restart And Get A New Word.</button>
 
     </div>
 
